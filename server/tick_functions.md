@@ -1,4 +1,5 @@
 # Funções disponíveis no Serverside através de **tick_functions.lua**
+O arquivo pode ser utilizado importando no fxmanifest.lua: `@es_extended/server/tick_functions.lua`
 
 | Função     | Retorno | Parâmetros                                     | Descrição                                     |
 |------------|---------|------------------------------------------------|------------------------------------------------

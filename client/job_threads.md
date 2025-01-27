@@ -1,4 +1,5 @@
 # Funções disponíveis no Clientside através de **job_threads.lua**
+O arquivo pode ser utilizado importando no fxmanifest.lua: `@es_extended/client/job_threads.lua`
 
 | Função     | Retorno | Parâmetros                                     | Descrição                                     |
 |------------|---------|------------------------------------------------|------------------------------------------------

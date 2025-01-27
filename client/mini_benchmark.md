@@ -1,4 +1,5 @@
 # Funções disponíveis no Clientside através de **mini_benchmark.lua**
+O arquivo pode ser utilizado importando no fxmanifest.lua: `@es_extended/client/mini_benchmark.lua`
 
 | Função     | Retorno | Parâmetros                                     | Descrição                                     |
 |------------|---------|------------------------------------------------|------------------------------------------------
