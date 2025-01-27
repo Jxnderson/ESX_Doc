@@ -1,0 +1,9 @@
+# Funções disponíveis no Clientside através de **job_threads.lua**
+
+| Função     | Retorno | Parâmetros                                     | Descrição                                     |
+|------------|---------|------------------------------------------------|------------------------------------------------
+| `RegisterJobThread`    | void  | tickFunc, jobInfo, threadName                        | Cria um thread que pode ser acionado dinamicamente pela framework, baseado no emprego atual do jogador. O parâmetro `jobInfo` pode ser usado como uma string ou uma lista de strings para definir quais empregos irão executar este thread. *(OBS.: `threadName` precisa ser uma string única!)*
+| `RegisterEventThread`    | void  | eventName, threadName, tickFunc, onThreadEndCb                                 | Cria um thread que pode ser acionado dinamicamente pela framework, baseado num valor boolean enviado pelo EventHandler. *(OBS.: `threadName` precisa ser uma string única!)*
+| `RegisterNetEventThread`  | void  | eventName, threadName, tickFunc, onThreadEndCb | Cria um thread que pode ser acionado dinamicamente pela framework, baseado num valor boolean enviado pelo EventHandler. *(OBS.: `threadName` precisa ser uma string única!)*
+| `RegisterGridAreaThread`  | void  | threadName, coordsList, maxNearbyGridsRange, tickFunc, onThreadEndCb, useFinalRenderedCamCoord, canBeRegisteredWithoutData | Cria um thread que pode ser acionado dinamicamente pela framework, baseado na coordenada ou coordenadas passadas pelo parâmetro `coordsList`. *(OBS.: `threadName` precisa ser uma string única!)*
+| `UpdateGridAreaThread`  | void  | threadName, coordsList, maxNearbyGridsRange | Atualiza a coordenada ou coordenadas de um thread dinâmico do tipo GRID_AREA.
