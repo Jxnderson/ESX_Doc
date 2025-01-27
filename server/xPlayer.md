@@ -2,22 +2,23 @@
 
 | Função     | Retorno | Parâmetros                                     | Descrição                                     |
 |------------|---------|------------------------------------------------|------------------------------------------------
-| `getIsBeingDropped`    | bool  |                         |
-| `setAsBeingDropped`    | void  |                        |
-| `getCanDropItemsOnDisconnection`    | bool  |                        |
-| `setDropItemsOnDisconnection`    | void  | state, index, periodDuration                       |
+| `getIsBeingDropped`    | bool  |                         | Retorna se o jogador está em processo de quitar do jogo.
+| `setAsBeingDropped`    | void  |                        | Seta o estado do jogador como `em processo de saída do jogo`.
+| `getCanDropItemsOnDisconnection`    | bool  |                        | Retorna se o jogador deve dropar itens numa sacola ao desconectar do jogo.
+| `setDropItemsOnDisconnection`    | void  | state, index, periodDuration                       | Define se o jogador deverá dropar seus itens numa sacola ao desconectar do jogo.
 | `setVolatilData`    | void  | entryName, value, avoidDatabaseUpdate, avoidClientsideUpdate                       |
 | `getVolatilData`    | dynamic  | entryName                       |
 | `canGroupTarget`    | bool  | groupName                       |
-| `setMoney`    | void  | money                       |
-| `getMoney`    | number  |                        |
+| `setMoney`    | void  | money                       | Define a quantia atual de dinheiro em mãos.
+| `getMoney`    | number  |                        | Retorna a quantia atual de dinheiro em mãos.
 | `getBank`    | number  |                        |
-| `getCoords`    | vector3  |                        |
-| `getRealCoords`    | vector3  |                        |
-| `isNearToCoords`    | bool  | coords, range, useZ                       |
+| `getCoords`    | vector3  |                        | OBSOLETO: Retorna a coordenada atual.
+| `getRealCoords`    | vector3  |                        | Retorna a coordenada atual baseada no OneSync.
+| `getLastPosition`    | dynamic  |                        | Retorna a última coordenada setada no Banco de dados.
+| `isNearToCoords`    | bool  | coords, range, useZ                       | Retorna se está próximo de uma coordenada.
 | `kick`    | void  | reasonLabel                       |
-| `addMoney`    | void  | money, noSFX                       |
-| `removeMoney`    | void  | money, noSFX                       |
+| `addMoney`    | void  | money, noSFX                       | Adiciona uma quantia de dinheiro em mãos.
+| `removeMoney`    | void  | money, noSFX                       | Remove uma quantia de dinheiro em mãos.
 | `getPermissions`    | dynamic  |                        |
 | `setPermissions`    | void  | permissionName, replicateToDatabase                       |
 | `getIdentifier`    | string  |                        |
@@ -40,8 +41,7 @@
 | `getJob`    | dynamic  |                        |
 | `getLoadout`    | [dynamic]  |                        |
 | `getName`    | string  |                        |
-| `getLastPosition`    | dynamic  |                        |
-| `getCharacterName`    | string  | canCallFallback                       |
+| `getCharacterName`    | string  | canCallFallback                       | Retorna o nome do personagem atual em uso.
 | `createAccount`    | dynamic  | accountName, money                       |
 | `setAccountMoney`    | void  | accountName, money, noSFX                       |
 | `setAccountMoneyByIndex`    | void  | index, accountName, money, noSFX                       |
@@ -69,7 +69,7 @@
 | `removeBagItemByIndex`    | void  | bagIndex, name                       |
 | `removeBagItem`    | void  | name                       |
 | `refreshBagWeight`    | void  | withoutClientEvent                       |
-| `getWeight`    | number  |                        |
+| `getWeight`    | number  |                        | Retorna o peso atual do inventário.
 | `refreshWeight`    | void  |                        |
 | `canCarryItem`    | bool  | name, count, extraData, itemsToIgnoreWeightCalc                       |
 | `setMaxWeight`    | void  | newWeight                       |
@@ -94,16 +94,16 @@
 | `removeTempWeaponByIndex`    | void  | weaponIndex, weaponName                       |
 | `getTempWeapon`    | dynamic  | weaponName                       |
 | `getTempWeaponWithIndex`    | number, dynamic  | weaponName                       |
-| `giveAchievement`    | void  | achievementName, count                       |
-| `getRankLevel`    | number  | rankName                       |
-| `giveRankXP`    | void  | rankName, xpCount                       |
-| `triggerEvent`    | void  | eventName, ...                       |
+| `giveAchievement`    | void  | achievementName, count                       | Adiciona progresso a uma conquista.
+| `getRankLevel`    | number  | rankName                       | Retorna o nível atual em um rank.
+| `giveRankXP`    | void  | rankName, xpCount                       | Adiciona XP a um rank.
+| `triggerEvent`    | void  | eventName, ...                       | Dispara um evento (igual `TriggerClientEvent`)
 | `showNotification`    | void  | msg, data                       |
 | `showAdvancedNotification`    | void  | title, subtitle, msg, photo, icon, extraData                       |
 | `showNUINotification`    | void  | msg, data                       |
 | `showHelpText`    | void  | msg, duration, beep, canBeQueued                       |
 | `showBankNotification`    | void  | subtitle, msg, icon                       |
 | `showPhoneNotification`    | void  | appName, subtitle, message, supressSFX, suppressOnPrecaryPhones                       |
-| `createProgressbar`    | Handle  | text, duration, color                       |
-| `cancelProgressbar`    | void  | id                       |
+| `createProgressbar`    | Handle  | text, duration, color                       | Cria uma barra de progresso.
+| `cancelProgressbar`    | void  | id                       | Cancela uma barra de progresso pelo ID.
 | `getAssignedBankData`    | string, string  |                        |
