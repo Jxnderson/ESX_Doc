@@ -11,14 +11,6 @@
 | `ESX.Game.GetObjectFromNetId`   | Object    | netId                        |
 | `ESX.Game.GetPedFromNetId`   | Ped    | netId                        |
 | `ESX.Game.IsPedUsingFreemodeSkin`   | bool    | ped                        |
-| `ESX.DisplayHelpText`   | void    | str, loop, duration                        |
-| `ESX.DisplayLongHelpText`   | void    | str, loop, duration, beep, canBeQueued                        |
-| `ESX.DisplayLongHelpTextThisFrame`   | void    | str                        |
-| `ESX.DisplayMissionText`   | void    | text, time, drawNow                        |
-| `ESX.DisplayLongMissionText`   | void    | text, time, drawNow                        |
-| `ESX.ShowNotification`   | void    | msg, data                        |
-| `ESX.ShowAdvancedNotification`   | void    | title, subject, msg, icon, iconType, data                        |
-| `ESX.ShowNUINotification`   | void    | msg, data                        |
 | `ESX.Game.GetHeadingBetweenCoords`   | number    | coordA, coordB, iParam6                        |
 | `ESX.Game.IsEntityFacingDirection`   | bool    | entity, heading, distanceAmount                        |
 | `ESX.Game.GetPedMugshot`   | Handle    | ped, useTransparentBg                        |
@@ -48,19 +40,20 @@
 | `ESX.Game.IsSpawnPointClear`   | bool    | coords, radius, noVehsCheck, noObjsCheck, noPedsCheck                        |
 | `ESX.Game.GetPeds`   | [Ped]    | ignoreList                        |
 | `ESX.Game.GetClosestPed`   | Ped    | coords, ignoreList                        |
-| `ESX.Game.ResetWheelsPairByDecor`   | void    | veh, type, pairId                        |
+| `ESX.Game.ResetVehicleWheelsPairByDecor`   | void    | veh, type, pairId                        |
 | `ESX.Game.ResetVehicleSuspensionHeightByDecor`   | void    | veh                        |
-| `ESX.Game.GetBetterTickByDistance`   | number    | distance                        |
-| `ESX.Game.GetPlayerWhitelistData`   | json    | playerServerId                        |
 | `ESX.Game.GetPedMugshotAsBase64`   | string    | ped, useTransparentBg                        |
+| `ESX.Game.Utils.DrawText3D`   | void    | coords, text, size                        |
 | `ESX.SetTimeout`   | Handle    | msec, cb                        |
 | `ESX.ClearTimeout`   | void    | id                        |
 | `ESX.IsPlayerLoaded`   | bool    |                         |
+| `ESX.GetPlayerWhitelistData`   | json    | playerServerId                        |
 | `ESX.GetPlayerData`   | json    |                         |
 | `ESX.SetPlayerData`   | void    | key, val                        |
 | `ESX.IsPlayerSkinLoaded`   | bool    |                         |
 | `ESX.TriggerServerCallback`   | void    | name, cb, ...                        |
 | `ESX.GetPickups`   | [Handle]    |                         |
+| `ESX.CalculateBestTickPacingByDistance`   | number    | distance                        |
 | `ESX.UI.HUD.SetDisplay`   | void    | opacity                        |
 | `ESX.UI.HUD.RegisterElement`   | void    | name, label, index, priority, html, data                        |
 | `ESX.UI.HUD.RemoveElement`   | void    | name                        |
@@ -80,8 +73,6 @@
 | `ESX.UI.Menu.IsOpen`   | bool    | type, namespace, name                        |
 | `ESX.UI.Menu.IsAnyOpened`   | bool    |                         |
 | `ESX.UI.Menu.IsAnyNamespacedOpen`   | bool    | namespace                        |
-| `ESX.NUI.SetNUIActive`   | void    | resourceName, hasFocus, hasCursor                        |
-| `ESX.NUI.IsAnyNUIOpen`   | bool    | resourceNameToAvoid, withCursorOnly                        |
 | `ESX.UI.Menu.ChoosePlayersInArea`   | void    | areaRange, cb, onlyReacheablePlayers, menuTitle                        |
 | `ESX.UI.Menu.ChoosePlayersNearbyPos`   | void    | coords, areaRange, cb, onlyReacheablePlayers, menuTitle                        |
 | `ESX.UI.Menu.OpenYesNoDialog`   | void    | title, question, submitCb, denyCb, canGoOverNUIs                        |
@@ -90,11 +81,20 @@
 | `ESX.UI.ShowInventoryItemNotification`   | void    | add, itemData, count                        |
 | `ESX.UI.ShowCashNotification`   | void    | add, accountData, symbol, money                        |
 | `ESX.UI.ShowWeaponItemNotification`   | void    | add, weaponData, count                        |
+| `ESX.NUI.SetNUIActive`   | void    | resourceName, hasFocus, hasCursor                        |
+| `ESX.NUI.IsAnyNUIOpen`   | bool    | resourceNameToAvoid, withCursorOnly                        |
+| `ESX.DisplayHelpText`   | void    | str, loop, duration                        |
+| `ESX.DisplayLongHelpText`   | void    | str, loop, duration, beep, canBeQueued                        |
+| `ESX.DisplayLongHelpTextThisFrame`   | void    | str                        |
+| `ESX.DisplayMissionText`   | void    | text, time, drawNow                        |
+| `ESX.DisplayLongMissionText`   | void    | text, time, drawNow                        |
+| `ESX.ShowNotification`   | void    | msg, data                        |
+| `ESX.ShowAdvancedNotification`   | void    | title, subject, msg, icon, iconType, data                        |
+| `ESX.ShowNUINotification`   | void    | msg, data                        |
 | `ESX.GetSocietyIntByName`   | number    | society                        |
 | `ESX.GetSocietyNameByInt`   | string    | societyId                        |
 | `ESX.GetSocietyLabelText`   | string    | societyInt                        |
 | `ESX.GetInventoryItemCount`   | number    | itemName                        |
-| `ESX.Game.Utils.DrawText3D`   | void    | coords, text, size                        |
 | `ESX.Camera.CreateTalkingCamera`   | [Camera]    | entity, camHeightOffset                        |
 | `ESX.Camera.DeleteTalkingCamera`   | void    | cam                        |
 | `ESX.Admin.GetGroup`   | string    |                         |

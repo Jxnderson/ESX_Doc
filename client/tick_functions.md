@@ -22,8 +22,8 @@ O arquivo pode ser utilizado importando no fxmanifest.lua: `@es_extended/client/
 | `ESX_GetDistanceBetweenHeadings`   | number    | headingA, headingB                        |
 | `ESX_GetHeadingBetweenCoords`   | number    | coordA, coordB, iParam6                        |
 | `ESX_IsEntityFacingDirection`   | bool    | entity, heading, distanceAmount                        |
-| `ESX_SlideEntityCoordsAndHeadingThisFrame`    | void  | entity, newPos, newHeading, posSpeedAxis, headingSpeed, forceNoOffset                        |
 | `ESX_IsEntityAtCoord`    | bool  | entity, x, y, z, xRange, yRange, zRange                        |
+| `ESX_SlideEntityCoordsAndHeadingThisFrame`    | void  | entity, newPos, newHeading, posSpeedAxis, headingSpeed, forceNoOffset                        |
 | `ESX_GetPedMugshot`   | Handle    | ped, useTransparentBg                        |
 | `ESX_Teleport`   | void    | entity, coords, cb, keepPedVeh                        |
 | `ESX_TeleportPlayer`   | bool    | playerPed, coords, range, keepPedVeh                        |
@@ -43,7 +43,7 @@ O arquivo pode ser utilizado importando no fxmanifest.lua: `@es_extended/client/
 | `ESX_SetVehicleProperties`    | void  | vehicle, props                        | Define as propriedades de personalização de um veículo.
 | `ESX_GetVehicleExtraDamageProperties`    | json  | vehicle                        | Retorna as propriedades de danos físicos de um veículo.
 | `ESX_SetVehicleExtraDamageProperties`    | void  | vehicle, data                        | Define as propriedades de danos físicos de um veículo.
-| `ESX_ResetWheelsPairByDecor`   | void    | veh, type, pairId                        | Reseta as informações customizadas por Decorator de WheelsPair do veículo.
+| `ESX_ResetVehicleWheelsPairByDecor`   | void    | veh, type, pairId                        | Reseta as informações customizadas por Decorator de WheelsPair do veículo.
 | `ESX_ResetVehicleSuspensionHeightByDecor`   | void    | veh                        | Reseta as informações customizadas por Decorator de SuspensionHeight do veículo.
 | `ESX_ResetVehicleSuspensionBiasByDecor`   | void    | veh                        | Reseta as informações customizadas por Decorator de SuspensionBias do veículo.
 | `ESX_ResetVehicleTractionBiasByDecor`   | void    | veh                        | Reseta as informações customizadas por Decorator de TractionBias do veículo.
@@ -59,6 +59,7 @@ O arquivo pode ser utilizado importando no fxmanifest.lua: `@es_extended/client/
 | `ESX_GetValueAdaptedToHigherFramesPerSecond`    | number  | value, currentFPS                        | Retorna o valor informado, porém reajustado baseado na taxa de FPS informado.
 | `ESX_SetNUIFocus`   | void    | resourceName, hasFocus, hasCursor                        |
 | `ESX_DrawText3D`   | void    | coords, text, size                        |
+| `ESX_CalculateBestTickPacingByDistance`     | number | distance          |
 | `ESX_SetBlipName`    | void  | blip, name                        | Define o nome de um Blip.
 | `ESX_RemoveBlip`    | void  | blip                        | Deleta um Blip.
 | `ESX_CreateInstructionalButtonsScaleform`    | void  |                         |
