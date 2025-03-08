@@ -12,8 +12,7 @@
 | `setMoney`    | void  | money                       | Define a quantia atual de dinheiro em mãos.
 | `getMoney`    | number  |                        | Retorna a quantia atual de dinheiro em mãos.
 | `getBank`    | number  |                        |
-| `getCoords`    | vector3  |                        | OBSOLETO: Retorna a coordenada atual.
-| `getRealCoords`    | vector3  |                        | Retorna a coordenada atual baseada no OneSync.
+| `getPedCoords`    | vector3  |                        | Retorna a coordenada atual baseada no OneSync.
 | `getLastPosition`    | dynamic  |                        | Retorna a última coordenada setada no Banco de dados.
 | `isNearToCoords`    | bool  | coords, range, useZ                       | Retorna se está próximo de uma coordenada.
 | `kick`    | void  | reasonLabel                       |
@@ -21,7 +20,6 @@
 | `removeMoney`    | void  | money, noSFX                       | Remove uma quantia de dinheiro em mãos.
 | `getPermissions`    | dynamic  |                        |
 | `setPermissions`    | void  | permissionName, replicateToDatabase                       |
-| `getIdentifier`    | string  |                        |
 | `setGroup`    | void  | groupName, replicateToDatabase                       |
 | `getGroup`    | string  |                        |
 | `getRoles`    | [string]  |                        |
@@ -31,7 +29,6 @@
 | `hasRole`    | bool  | role                       |
 | `set`    | void  | key, value                       |
 | `get`    | dynamic  | key                       |
-| `getPlayer`    | dynamic  |                        |
 | `getRealAccounts`    | [dynamic]  |                        |
 | `getAccount`    | dynamic  | accountName                       |
 | `getAccountWithIndex`    | number, dynamic  | accountName                       |

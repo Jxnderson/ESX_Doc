@@ -19,9 +19,9 @@
 | `ESX.RegisterServerCallback`    | void  | name, cb                        |
 | `ESX.TriggerServerCallback`    | void  | name, requestId, source, cb, ...                        |
 | `ESX.DropPlayerItems`    | void  | xPlayer, reason                        |
-| `ESX.SavePlayer`    | void  | xPlayer, endCb, isBeingDropped, dropReason                        |
-| `ESX.SavePlayers`    | void  | endCb                        |
-| `ESX.StartDBSync`    | void  |                         |
+| `ESX.SavePlayer`    | void  | xPlayer, endCb, type, dropReason                        | Type: (0 - Save completo | 1 - Save completo devido a quit | 2 - Save de dinheiro)
+| `ESX.SavePlayers`    | void  | endCb, doSimpleSave                        |
+| `ESX.StartDBPeriodicSyncTimer` | void  |                         |
 | `ESX.GetPlayers`    | [ID]  |                         |
 | `ESX.GetJobPlayers`    | [ID]  | jobName                        |
 | `ESX.GetJobPlayersIndexed`    | [ID]  | jobName                        |
@@ -40,7 +40,6 @@
 | `ESX.UseItem`    | void  | source, itemName, itemIndex, xPlayer                        |
 | `ESX.CreatePickup`    | Handle,dynamic  | type, name, count, label, player, extraData                        |
 | `ESX.DeletePickup`    | void  | id                        |
-| `ESX.GetPickupRequestPosString`    | string  | id                        |
 | `ESX.CreateDisconnectionBag`    | void  | xPlayer, reason, placedAt, carriedMoney, accountsList, itemsList, weaponsList                        |
 | `ESX.DeleteDisconnectionBag`    | void  | id                        |
 | `ESX.FindPlayerIdentifier`    | string  | source, str                        |
