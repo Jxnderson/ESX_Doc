@@ -7,7 +7,7 @@
 | `esx:drawBasicBlips`                 |                              | false | É disparado uma vez quando a framework está pronta para criar Blips.
 | `esx:onPlayerDeath`                  | killerId                     | false | É disparado quando o jogador morre.
 | `esx:onWaypointTeleport`             | position                     | false | É disparado quando o jogador utiliza o comando de teleport por waypoint.
-| `esx:hasPauseMenuToggled`            | state                        | false | É disparado quando o jogador abre o menu de pause.
+| `esx:onPauseMenuToggle`              | state                        | false | É disparado quando o jogador abre/fecha o menu de pause.
 | `esx:onJobActionsControlPressed`     | state                        | false | É disparado quando o jogador pressiona a tecla pra abrir o menu do emprego atual.
 | `esx:onGameZoneEnter`                | zoneName, gridId, camGridId  | false |
 | `esx:isRankupHudComponentActive`     | state                        | false | É disparado quando a HUD de progredir de rank está ativa.
@@ -19,8 +19,8 @@
 | `esx:deleteVehicle`         |          | true | Deleta o Vehicle que estiver na frente do jogador.
 | `esx:deleteVehicle2`        |          | true | Identifica o Vehicle em frente ao jogador, e solicita ao servidor para que delete-o utilizando OneSync.
 | `esx:setWantedLevelControlByAnotherScript`        | state          | false | Informa a framework que outro script precisa controlar o Nível de Procurado.
-| `esx:toogleCopsChase`          | state          | true | É disparado quando o /pmnabota é ativado ou desativado pelo servidor.
-| `esx:peacefulToogle`           | state          | false | Inform a framework que outro script quer que a framework ative/desative o modo pacífico.
+| `esx:toggleCopsChase`          | state          | true | É disparado quando o /pmnabota é ativado ou desativado pelo servidor.
+| `esx:peacefulToggle`           | state          | false | Informa a framework que outro script quer que a framework ative/desative o modo pacífico.
 | `es:disablePvpTemp`            | state          | false |
 | `esx:getMyAchievements`        | cb         | false | Retorna uma lista com todas as conquistas do jogador.
-| `esx:getPlayerJobRankLevel`        | cb, rankName         | false | Retorna o nível do jogador em um rank específico.
+| `esx:getPlayerJobRankLevel`    | cb, rankName         | false | Retorna o nível do jogador em um rank específico.
