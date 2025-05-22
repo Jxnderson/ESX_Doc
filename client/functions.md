@@ -14,7 +14,7 @@
 | `ESX.Game.GetHeadingBetweenCoords`   | number    | coordA, coordB, iParam6                        |
 | `ESX.Game.IsEntityFacingDirection`   | bool    | entity, heading, distanceAmount                  |
 | `ESX.Game.GetPedMugshot`   | Handle    | ped, useTransparentBg                        |
-| `ESX.Game.GetPedMugshotAsBase64`   | string    | ped, useTransparentBg                        | Retorna uma string Base64 contendo um mugshot do Ped indicado. *NÃO* utilize esta função quando o jogo estiver com tela preta!
+| `ESX.Game.GetPedMugshotAsBase64`   | string    | ped, useTransparentBg                        | Retorna uma string Base64 contendo um mugshot do Ped indicado. **NÃO** utilize esta função quando o jogo estiver com tela preta!
 | `ESX.Game.Teleport`   | void    | entity, coords, cb, keepPedVeh                        |
 | `ESX.Game.TeleportPlayer`   | void    | playerPed, coords, range, cb, keepPedVeh                        |
 | `ESX.Game.StartLoadScene`   | bool    | coords, range, cb, duration, useFocusArea                        |
@@ -45,10 +45,10 @@
 | `ESX.Game.ResetVehicleSuspensionHeightByDecor`   | void    | veh                        |
 | `ESX.Game.Utils.DrawText3D`   | void    | coords, text, size                        |
 | `ESX.SetTimeout`   | Handle    | msec, cb                        | Cria um Timeout e retorna um ID único que simboliza este Timeout.
-| `ESX.ClearTimeout`   | void    | id                        | Destroi um Timeout criado através de *ESX.SetTimeout**.
-| `ESX.IsPlayerLoaded`   | bool    |                         | Retorna *true* ou *false* caso PlayerData já tenha sido preenchido com dados do servidor. 
+| `ESX.ClearTimeout`   | void    | id                        | Destroi um Timeout criado através de **ESX.SetTimeout**.
+| `ESX.IsPlayerLoaded`   | bool    |                         | Retorna **true** ou **false** caso PlayerData já tenha sido preenchido com dados do servidor. 
 | `ESX.GetPlayerWhitelistData`   | json    | playerServerId                        |
-| `ESX.GetPlayerData`   | json    |                         | Retorna os dados do conta do jogador recebidos do servidor. Caso os dados não estejam disponíveis ainda, retornará *NULL*.
+| `ESX.GetPlayerData`   | json    |                         | Retorna os dados do conta do jogador recebidos do servidor. Caso os dados não estejam disponíveis ainda, retornará **NULL**.
 | `ESX.SetPlayerData`   | void    | key, val                        |
 | `ESX.IsPlayerSkinLoaded`   | bool    |                         |
 | `ESX.TriggerServerCallback`   | void    | name, cb, ...                        | Envia um evento ao servidor e retorna a resposta do servidor através da callback.
@@ -81,7 +81,7 @@
 | `ESX.UI.ShowInventoryItemNotification`   | void    | add, itemData, count                        |
 | `ESX.UI.ShowCashNotification`   | void    | add, accountData, symbol, money                        |
 | `ESX.UI.ShowWeaponItemNotification`   | void    | add, weaponData, count                        |
-| `ESX.NUI.SetNUIActive`   | void    | resourceName, hasFocus, hasCursor                        | Salva em cache o estado do uso de NUI de determinado SCRIPT. Não use esta função se não souber o que está fazendo! Caso esteja procurando uma alternativa a SetNuiFocus, use *ESX_SetNUIFocus*!
+| `ESX.NUI.SetNUIActive`   | void    | resourceName, hasFocus, hasCursor                        | Salva em cache o estado do uso de NUI de determinado SCRIPT. Não use esta função se não souber o que está fazendo! Caso esteja procurando uma alternativa a SetNuiFocus, use **ESX_SetNUIFocus**!
 | `ESX.NUI.IsAnyNUIOpen`   | bool    | resourceNameToAvoid, withCursorOnly                        | Retorna se no cache da framework há algum script com o Foco na NUI ativo.
 | `ESX.DisplayHelpText`   | void    | str, loop, duration                        |
 | `ESX.DisplayLongHelpText`   | void    | str, loop, duration, beep, canBeQueued                        |
