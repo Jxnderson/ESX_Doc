@@ -33,8 +33,8 @@ O arquivo pode ser utilizado importando no fxmanifest.lua: `@es_extended/client/
 | `ESX_DeleteObject`   | void    | object                        | Deleta um Object.
 | `ESX_DeletePed`   | void    | ped                        | Deleta um Ped.
 | `ESX_DeleteAttachedEntitiesToEntity`    | void  | entity                        |
-| `ESX_GetClosestPlayer`   | Player, number    | coords, canGetLocalPlayerPed                        | Retorna o Player mais próximo e a distância dele. Retornará -1 caso nenhum jogador seja encontrado.
-| `ESX_GetPlayersInArea`   | [Player]    | coords, area, returnServerIds                        |
+| `ESX_GetClosestPlayer`   | ID, number    | coords, canGetLocalPlayerPed                        | Retorna o ID do jogador mais próximo e a distância dele. Retornará -1 caso nenhum jogador seja encontrado.
+| `ESX_GetPlayersInArea`   | [ID]          | coords, area, returnServerIds                       | Retorna uma lista de jogadores próximos a uma localização e dentro de determinada distância.
 | `ESX_GetClosestVehicle`   | Vehicle    | coords                        |
 | `ESX_GetVehicleInDirection`    | Vehicle  | range, checkMapHit, checkObjectHit                        |
 | `ESX_GetVehicleInDirectionOfEntity`    | Vehicle  | entity, range, zOffset, checkMapHit, checkObjectHit                        |
