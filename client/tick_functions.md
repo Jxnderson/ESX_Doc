@@ -60,6 +60,7 @@ O arquivo pode ser utilizado importando no fxmanifest.lua: `@es_extended/client/
 | `ESX_SetNUIFocus`   | void    | resourceName, hasFocus, hasCursor                        |
 | `ESX_DrawText3D`   | void    | coords, text, size                        |
 | `ESX_CalculateBestTickPacingByDistance`     | number | distance          |
+| `ESX_SetBlipData`    | void  | blip, data                        | Define diversos aspectos estéticos de um Blip.
 | `ESX_SetBlipName`    | void  | blip, name                        | Define o nome de um Blip.
 | `ESX_RemoveBlip`    | void  | blip                        | Deleta um Blip.
 | `ESX_CreateInstructionalButtonsScaleform`    | void  |                         |
