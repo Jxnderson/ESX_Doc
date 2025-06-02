@@ -47,6 +47,7 @@ O arquivo pode ser utilizado importando no fxmanifest.lua: `@es_extended/client/
 | `ESX_ResetVehicleSuspensionHeightByDecor`   | void    | veh                        | Reseta as informações customizadas por Decorator de SuspensionHeight do veículo.
 | `ESX_ResetVehicleSuspensionBiasByDecor`   | void    | veh                        | Reseta as informações customizadas por Decorator de SuspensionBias do veículo.
 | `ESX_ResetVehicleTractionBiasByDecor`   | void    | veh                        | Reseta as informações customizadas por Decorator de TractionBias do veículo.
+| `ESX_SetNetworkVehicleRespotTimer`   | void    | vehicle, netId, duration, isBlinkNetworked, blink | É a native **SetNetworkVehicleRespotTimer** porém evitará alarmes falsos vindos do Anti-Cheat.
 | `ESX_IsThisVehicleAPlayerVehicle`    | bool  | vehicle                        | Retorna se o Vehicle pertence a um jogador.
 | `ESX_IsThisVehicleAPersonalVehicleFromThisPlayer`    | bool  | vehicle, accountId                        | Retorna se o Vehicle possui como dono `accountId` (ID da conta do jogador).
 | `ESX_GetPersonalVehicleOwnerAccountId`    | ACCOUNT_ID  | vehicle                        | Retorna o ID da conta do dono de um Vehicle.
