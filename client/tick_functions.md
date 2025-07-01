@@ -58,6 +58,7 @@ O arquivo pode ser utilizado importando no fxmanifest.lua: `@es_extended/client/
 | `ESX_GetPedVehicleSeat`    | number  | ped, vehicle                        | Retorna o assento atual que um Ped está ocupando em um Vehicle. Retornará -2 caso o Ped não esteja ocupando um assento no veículo.
 | `ESX_GetDistanceBetweenCoords`    | number  | coordsA, coordsB, useZ                        | Calcula e retorna a distância entre 2 coordenadas.
 | `ESX_GetValueAdaptedToHigherFramesPerSecond`    | number  | value, currentFPS                        | Retorna o valor informado, porém reajustado baseado na taxa de FPS informado.
+| `ESX_IsInFirstPersonCamera`    | bool  |                         | Retorna se o jogador está utilizando a câmera em primeira pessoa.
 | `ESX_SetNUIFocus`   | void    | resourceName, hasFocus, hasCursor                        |
 | `ESX_DrawText3D`   | void    | coords, text, size                        |
 | `ESX_CalculateBestTickPacingByDistance`     | number | distance          |
