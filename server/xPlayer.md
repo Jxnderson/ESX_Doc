@@ -9,6 +9,7 @@
 | `setVolatilData`    | void  | entryName, value, avoidDatabaseUpdate, avoidClientsideUpdate                       |
 | `getVolatilData`    | dynamic  | entryName                       |
 | `canGroupTarget`    | bool  | groupName                       |
+| `canExecuteCommand` | bool  | commandName                     | Retorna se o jogador tem permissões para executar determinado comando (só funciona com comandos criados pelos eventos da framework).
 | `setMoney`    | void  | money                       | Define a quantia atual de dinheiro em mãos.
 | `getMoney`    | number  |                        | Retorna a quantia atual de dinheiro em mãos.
 | `getBank`    | number  |                        | Retorna a quantia atual de dinheiro no banco.
