@@ -51,6 +51,7 @@ O arquivo pode ser utilizado importando no fxmanifest.lua: `@es_extended/client/
 | `ESX_IsThisVehicleAPlayerVehicle`    | bool  | vehicle                        | Retorna se o Vehicle pertence a um jogador.
 | `ESX_IsThisVehicleAPersonalVehicleFromThisPlayer`    | bool  | vehicle, accountId                        | Retorna se o Vehicle possui como dono `accountId` (ID da conta do jogador).
 | `ESX_GetPersonalVehicleOwnerAccountId`    | ACCOUNT_ID  | vehicle                        | Retorna o ID da conta do dono de um Vehicle.
+| `ESX_SetPersonalVehicleOwnerAccountId`    | void  | vehicle, accountId                   | Define o ID da conta do dono de um Vehicle.
 | `ESX_RefreshVehicleStateBagsFromPropsDecors`    | void  | veh                        | Replica todos os Decorators de um Vehicle utilizando StateBags.
 | `ESX_IsSpawnPointClear`   | bool    | coords, radius, noVehsCheck, noObjsCheck, noPedsCheck                        | Retorna se uma coordenada está disponível para ser usada como Ponto de Spawn.
 | `ESX_GetPlayersInVehicle`    | [Player]  | vehicle, canIncludeLocalPlayer                        | Retorna uma lista de ID de jogadores que estão dentro de um Vehicle.
