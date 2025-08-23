@@ -95,7 +95,8 @@
 | `removeTempWeaponByIndex`    | void  | weaponIndex, weaponName                       |
 | `getTempWeapon`    | dynamic  | weaponName                       |
 | `getTempWeaponWithIndex`    | number, dynamic  | weaponName                       |
-| `giveAchievement`    | void  | achievementName, count                       | Adiciona progresso a uma conquista.
+| `hasAchievement`    | bool  | achievementName                       | Retorna se o jogador possui uma conquista.
+| `giveAchievement`   | void  | achievementName, progressCount        | Adiciona progresso a uma conquista.
 | `getRankLevel`    | number  | rankName                            | Retorna o nível atual em um rank.
 | `giveRankXP`    | void  | rankName, xpCount                       | Adiciona XP a um rank.
 | `triggerEvent`    | void  | eventName, ...                        | Dispara um evento (igual `TriggerClientEvent`)
