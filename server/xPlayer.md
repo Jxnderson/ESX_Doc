@@ -109,3 +109,6 @@
 | `createProgressbar`    | Handle  | text, duration, color                       | Cria uma barra de progresso.
 | `cancelProgressbar`    | void  | id                       | Cancela uma barra de progresso pelo ID.
 | `getAssignedBankData`    | string, string  |                        | Retorna o nome do banco e o nome do ícone de notificação do banco do jogador.
+| `isInThisPublicInstance`    | bool         | name | Retorna se o jogador está dentro de uma instância pública específica.
+| `isPlayerInSameWorldOrInstance` | bool     | xTarget | Retorna se os jogadores estão na mesma instância. Retornará TRUE caso ambos não estejam instanciados.
+| `isPlayerInSameInstance`    | bool         | xTarget | Retorna se o jogador está na mesma instância que outro jogador (xTarget). Retornará FALSO caso algum deles não esteja instanciado.
