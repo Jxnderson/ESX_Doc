@@ -76,7 +76,7 @@
 | `setMaxWeight`    | void  | newWeight                       |
 | `setJob`    | void  | name, grade, extraData                       |
 | `setJobExtraData`    | void  | extraData                       |
-| `addWeapon`    | dynamic  | weaponName, ammo, tint, components, creationTime                       |
+| `addWeapon`       | dynamic  | weaponName, ammo, tint, components, creationTime                       |
 | `removeWeapon`    | void  | weaponName                       |
 | `removeWeaponByIndex`    | void  | weaponIndex, weaponName                       |
 | `removeWeaponsConditioned`    | void  | conditionFunc                       |
@@ -99,6 +99,10 @@
 | `giveAchievement`   | void  | achievementName, progressCount        | Adiciona progresso a uma conquista.
 | `getRankLevel`    | number  | rankName                            | Retorna o nível atual em um rank.
 | `giveRankXP`    | void  | rankName, xpCount                       | Adiciona XP a um rank.
+| `getAccountBonuses`                | {string: dynamic}  | | Retorna a lista de bonificações de conta que estão salvas em cache. A lista é indexada pelo tipo das bonificações.
+| `getActiveAccountBonuses`          | {string: dynamic}  | Retorna somente a lista de bonificações de conta que estão ATIVAS. A lista é indexada pelo tipo das bonificações.
+| `getActiveAccountBonusesByType`    |  [dynamic]  | targetBonusType | Retorna somente a lista de bonificações de conta que estão ATIVAS de determinado tipo.
+| `giveAccountBonus`    | void  | bonusType, label, value, durationInDays, originatedFromName | Dá ao jogador uma bonificação de conta de determinado tipo, com um período específico definido e outros detalhes.
 | `triggerEvent`    | void  | eventName, ...                        | Dispara um evento (igual `TriggerClientEvent`)
 | `showNotification`    | void  | msg, data                         | Envia uma notificação simples do GTA:Online ao jogador.
 | `showAdvancedNotification`    | void  | title, subtitle, msg, photo, icon, extraData                       | Envia uma notificação complexa do GTA:Online ao jogador.
