@@ -36,6 +36,7 @@
 | `ESX.GetPlayerFromId`    | xPlayer  | source                        | Retorna o xPlayer de um jogador conectado através do ID temporário.
 | `ESX.GetPlayerFromIdentifier`    | xPlayer  | identifier                        | Retorna o xPlayer de um jogador conectado através do ID da conta, ou através de um identifier (caso seja passada uma string de identifier).
 | `ESX.GetPlayerFromWhitelistId`    | xPlayer  | id                        | Retorna o xPlayer de um jogador conectado através do ID da whitelist.
+| `ESX.IsThisItemUsable`    | bool  | itemName                        | Retorna TRUE caso o nome do item seja usável (para ser considerado usável, ele deve ter sido registrado pela função `ESX.RegisterUsableItem`).
 | `ESX.RegisterUsableItem`    | void  | itemName, cb                        | Registra um item como usável. Ao ser usado por um jogador, irá executar a função do parâmetro `cb`.
 | `ESX.UseItem`    | void  | source, itemName, itemIndex, xPlayer                        | Usado internamente para receber e processar o uso de um item.
 | `ESX.CreatePickup`    | Handle,dynamic  | type, name, count, label, player, extraData                        |
