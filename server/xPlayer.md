@@ -85,11 +85,13 @@
 | `getWeapon`    | dynamic  | weaponName                       |
 | `getWeaponWithIndex`    | number, dynamic  | weaponName                       |
 | `setWeaponTint`    | void  | weaponName, tintIndex                       |
-| `addWeaponComponent`    | dynamic  | weaponName, componentHash                       |
-| `addWeaponComponentFromModelData`    | dynamic  | weaponName, modelData                       |
-| `getWeaponComponent`    | dynamic  | weaponName, componentHash                       |
-| `getWeaponComponentIndexFromHash`    | dynamic  | weaponData, componentHash                       |
-| `removeWeaponComponent`    | void  | weaponName, componentHash                       |
+| `addWeaponComponent`    | void  | weaponName, componentHash                       |
+| `addWeaponComponentFromModelData`    | void  | weaponName, componentModelData               |
+| `getWeaponComponentIndex`            | number  | weaponName, componentHash                     |
+| `getWeaponComponentIndexByData`      | number  | weaponData, componentHash                     |
+| `removeWeaponComponent`              | void  | weaponName, componentHash                       |
+| `removeWeaponComponentByIndex`       | void  | weaponData, componentIndex, componentHash       |
+| `removeAllTintComponentsFromWeapon`  | void  | weaponData                                      |
 | `addTempWeapon`    | dynamic  | weaponName, ammo, tint, components                       |
 | `removeTempWeapon`    | void  | weaponName                       |
 | `removeTempWeaponByIndex`    | void  | weaponIndex, weaponName                       |
