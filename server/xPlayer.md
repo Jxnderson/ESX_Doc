@@ -89,8 +89,8 @@
 | `addWeaponComponentFromModelData`    | void  | weaponName, componentModelData               |
 | `getWeaponComponentIndex`            | number  | weaponName, componentHash                     |
 | `getWeaponComponentIndexByData`      | number  | weaponData, componentHash                     |
-| `removeWeaponComponent`              | void  | weaponName, componentHash                       |
-| `removeWeaponComponentByIndex`       | void  | weaponData, componentIndex, componentHash       |
+| `removeWeaponComponent`              | bool  | weaponName, componentHash                       |
+| `removeWeaponComponentByIndex`       | bool  | weaponData, componentIndex, componentHash       |
 | `removeAllTintComponentsFromWeapon`  | void  | weaponData                                      |
 | `addTempWeapon`    | dynamic  | weaponName, ammo, tint, components                       |
 | `removeTempWeapon`    | void  | weaponName                       |
