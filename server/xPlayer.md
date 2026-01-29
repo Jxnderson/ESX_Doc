@@ -57,8 +57,8 @@
 | `getInventoryItemWithIndex`    | number, dynamic  | name                       |
 | `getInventoryItemHavingExtraDataWithIndex`    | number,dynamic  | name, extraData                       |
 | `getInventoryItemWithIndexById`    | number, dynamic  | objId                       |
-| `createInventoryItem`    | void  | name, count, extraData, jumpWeightRefresh                       |
-| `addInventoryItem`    | dynamic  | name, count, extraData, jumpWeightRefresh                       |
+| `createInventoryItem`    | dynamic  | name, count, extraData, jumpWeightRefresh                       |
+| `addInventoryItem`       | dynamic  | name, count, extraData, jumpWeightRefresh                       |
 | `removeInventoryItem`    | void  | name, count, jumpWeightRefresh                       |
 | `removeInventoryItemByIndex`    | void  | index, name, count, jumpWeightRefresh                       |
 | `setInventoryItemByIndex`    | void  | index, name, count, jumpWeightRefresh                       |
